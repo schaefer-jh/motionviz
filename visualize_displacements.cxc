@@ -1,0 +1,16 @@
+open model1-9fuq.pdb
+open model2-9fur.pdb
+matchmaker #1 to #2
+open displacement_vectors.bild
+key blue:0.18 red:34.19 size 0.018,0.27 pos 0.78,0.55 numericLabelSpacing proportional ticks true tickLength 10 tickThickness 2
+2dlabels text "Displacement Magnitude (Å)" xpos 0.2 ypos 0.9 size 24
+2dlabels text "Min: 0.18 Å" xpos 0.7 ypos 0.46 size 20
+2dlabels text "Max: 34.19 Å" xpos 0.7 ypos 0.43 size 20
+2dlabels text "Avg: 9.65 Å" xpos 0.7 ypos 0.40 size 20
+hide #!1 models
+windowsize 600 600
+set bgColor white
+hide atoms
+preset cartoons/nucleotides licorice/ovals
+color #2 darkgrey
+view
