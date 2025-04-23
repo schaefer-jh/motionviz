@@ -1,11 +1,3 @@
-# This script requires biopython and numpy (pip install biopython numpy)
-# This script generates a ChimeraX command script to visualize the displacement vectors between two PDB structures.
-# It calculates the displacement vectors between the C-alpha atoms of the two structures, colors them based on their magnitude,
-# and generates a ChimeraX command script to visualize the displacements.
-# The script also generates a .bild file for the displacement vectors.
-# The .bild file contains the displacement vectors as cylinders and cones, colored based on their magnitude.
-# The script requires two PDB files as input, which should be provided in the same directory as the script.
-
 from Bio.PDB import PDBParser, is_aa
 import numpy as np
 
